@@ -1,5 +1,17 @@
 package practice02;
 
+import java.io.CharArrayReader;
+import java.io.CharArrayWriter;
+
+/*
+ * 
+문자 배열(char[])을 입력 받아, 공백을 ‘,’로 변환하는 메소드와 char[]을 입력 받아 출력하는 메소드를 만드세요
+
+<결과 값>
+This is a pencil
+This,is,a,pencil
+
+ * */
 public class Prob03 {
 
 	public static void main(String args[]) {
@@ -14,5 +26,25 @@ public class Prob03 {
 		// 수정된 배열 원소 출력
 		printCharArray(c);
 	}
+
+	public static void replaceSpace(char[] a) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==' ')
+				a[i]=',';
+			
+		}
+	}
+
+	public static void printCharArray(char[] a) {
+		// TODO Auto-generated method stub
+		
+		/*for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]);
+		}
+		System.out.println();*/
+		System.out.println(a);
+	}
+	
 	
 }
