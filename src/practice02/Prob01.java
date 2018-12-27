@@ -41,7 +41,7 @@ public class Prob01 {
 			}
 		}*/
 		
-		for(int i=0;i<MONEYS.length;i++) {
+		/*for(int i=0;i<MONEYS.length;i++) {
 			int standard=MONEYS[i];
 			
 			num[i]=target/standard;
@@ -49,6 +49,16 @@ public class Prob01 {
 		}
 		
 		for(int i=0; i<num.length;i++) {
+			System.out.println(MONEYS[i]+" : "+num[i]+"개");
+		}*/
+		
+		
+		 for(int i=0;i<MONEYS.length;i++) {
+			int standard=MONEYS[i];
+			
+			num[i]=target/standard;
+			target=target%standard;
+			
 			System.out.println(MONEYS[i]+" : "+num[i]+"개");
 		}
 	}
